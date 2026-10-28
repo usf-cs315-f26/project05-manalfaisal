@@ -1,0 +1,381 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-28T05:09:17.095Z",
+  "name": "sr-latch",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "input_2_1793116357679",
+      "type": "input",
+      "x": 5,
+      "y": 4,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 0,
+        "label": "R"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "input_1_1793116349013",
+      "type": "input",
+      "x": 5,
+      "y": 14,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 0,
+        "label": "S"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "output_1_1793116378296",
+      "type": "output",
+      "x": 20,
+      "y": 5,
+      "props": {
+        "bits": 1,
+        "base": 10,
+        "color": null,
+        "rotation": 0,
+        "label": "Q"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "output_2_1793160798930",
+      "type": "output",
+      "x": 20,
+      "y": 13,
+      "props": {
+        "bits": 1,
+        "base": 10,
+        "color": null,
+        "rotation": 0,
+        "label": "notQ"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "nor-gate_1_1793160847248",
+      "type": "nor-gate",
+      "x": 11,
+      "y": 12,
+      "props": {
+        "gateType": "nor",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": []
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 5,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "nor-gate_2_1793160889547",
+      "type": "nor-gate",
+      "x": 11,
+      "y": 4,
+      "props": {
+        "gateType": "nor",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": []
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 5,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1793161497859",
+      "points": [
+        {
+          "x": 16,
+          "y": 13
+        },
+        {
+          "x": 20,
+          "y": 13
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 16,
+          "y": 13
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 20,
+          "y": 13
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1793161500893",
+      "points": [
+        {
+          "x": 16,
+          "y": 5
+        },
+        {
+          "x": 20,
+          "y": 5
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 16,
+          "y": 5
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 20,
+          "y": 5
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1793161508776",
+      "points": [
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 11,
+          "y": 14
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 6,
+          "y": 14
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 11,
+          "y": 14
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1793161523393",
+      "points": [
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 11,
+          "y": 4
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 6,
+          "y": 4
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 11,
+          "y": 4
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1793163836788",
+      "points": [
+        {
+          "x": 19,
+          "y": 13
+        },
+        {
+          "x": 19,
+          "y": 8
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 8,
+          "y": 6
+        },
+        {
+          "x": 11,
+          "y": 6
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 16,
+          "y": 13
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 11,
+          "y": 6
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1793163849337",
+      "points": [
+        {
+          "x": 17,
+          "y": 5
+        },
+        {
+          "x": 17,
+          "y": 5
+        },
+        {
+          "x": 17,
+          "y": 10
+        },
+        {
+          "x": 9,
+          "y": 10
+        },
+        {
+          "x": 9,
+          "y": 12
+        },
+        {
+          "x": 11,
+          "y": 12
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 16,
+          "y": 5
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "componentId": "nor-gate_1_1793160847248",
+        "portIndex": 0,
+        "portType": "input",
+        "pos": {
+          "x": 11,
+          "y": 12
+        }
+      },
+      "bits": 1
+    }
+  ],
+  "wireJunctions": [
+    {
+      "pos": {
+        "x": 19,
+        "y": 13
+      },
+      "sourceWireIndex": 0,
+      "connectedWireId": "wire_1793163836788"
+    },
+    {
+      "pos": {
+        "x": 17,
+        "y": 5
+      },
+      "sourceWireIndex": 1,
+      "connectedWireId": "wire_1793163849337"
+    }
+  ],
+  "schematicComponents": {}
+}
